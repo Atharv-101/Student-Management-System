@@ -6,7 +6,7 @@ The Student Manager web application aims to improve efficiency and reduce admini
 
 <br>
 
-3.1. PROJECT SPECIFICATION
+## PROJECT SPECIFICATION
 
 1.	Technology and Stack:
 •	Choose appropriate web development technologies such as HTML, CSS, JavaScript, bootstrap, and a backend framework Firebase, PHP, MySQL for server-side development.
@@ -46,21 +46,7 @@ The Student Manager web application aims to improve efficiency and reduce admini
 By incorporating these system details into the development of the student management web application, educational institutions can efficiently manage student information, track academic progress, facilitate communication, and generate reports, ultimately enhancing the overall student management experience.
 
 
-
-3.2 BLOCK DIAGRAM
-
-
-
- 
-
-
-
-
-
-
-
-
-3.3 DESCRIPTION OF BLOCKS
+## DESCRIPTION OF BLOCKS
 
 1.	Admin: Admin have a control on the term like Login, Student List, Teacher List, Add Teacher, Department list, Add Department, Subject List, Data Analyse and Log Out.
 
@@ -93,7 +79,7 @@ By incorporating these system details into the development of the student manage
 
 
  
-4. ALGORITHM & FLOWCHART
+## ALGORITHM & FLOWCHART
 
 Algorithm:
 
@@ -147,7 +133,7 @@ It's essential to establish a comprehensive testing strategy and documentation t
 
 
  
-6. RESULTS
+## RESULTS
 
 After Testing our web application, we got the following outputs:
 
@@ -172,7 +158,7 @@ After Testing our web application, we got the following outputs:
 
 
  
-7. ADVANTAGES AND APPLICATIONS
+## ADVANTAGES AND APPLICATIONS
 
 Advantages:
 1.	Centralized Student Information: A web application for student management provides a centralized database to store and manage student information.
@@ -201,8 +187,7 @@ In summary, the application of a student management web application is widesprea
 The Student Management web application revolutionizes student management processes within educational institutions by streamlining administrative tasks, and facilitating data-driven decision-making. By centralizing student information, automating processes, and providing valuable insights through data analysis, the application optimizes efficiency, improves collaboration, and contributes to the overall success of students, teachers, and administrators. With its user-friendly interface and comprehensive features, the Student Management web application empowers educational institutions to provide a high-quality learning environment and foster student growth and achievement.
 
 
- 
-9. FUTURE SCOPE
+ ## FUTURE SCOPE
 
 1.	Integration with Learning Management Systems (LMS): The web application can be expanded to integrate with existing LMS platforms, allowing seamless data exchange between the student management system and the online learning environment. This integration would enhance the overall educational experience by consolidating student information, assignments, and grades in one unified platform.
 
@@ -228,7 +213,7 @@ By considering these future scope areas, the Student Management web application 
 
 
 
-10. EXPERIENCE WHILE DOING PBL
+## EXPERIENCE WHILE DOING PROJECT
 
 1.	Project Understanding: Initially, there will be a learning phase to understand the specific requirements and goals of the project. This involves collaborating with stakeholders such as educational administrators, teachers, and IT teams to gather detailed project specifications and define the scope of the application.
 
@@ -243,3 +228,46 @@ By considering these future scope areas, the Student Management web application 
 6.	Continuous Improvement and Maintenance: After the initial deployment, the project may enter a phase of continuous improvement and maintenance. This includes monitoring system performance, addressing user feedback, adding new features, and keeping the application up to date with security patches and technological advancements.
 
 Overall, working on a student management web application project can be challenging but rewarding. It requires a strong understanding of educational processes, effective collaboration with stakeholders, and expertise in web development and database management. With proper planning, execution, and continuous improvement, the project can successfully deliver a robust and user-friendly solution for managing student information and improving administrative processes in educational institutions.
+
+
+![17](https://github.com/Atharv-101/Student-Management-System/assets/69358946/2a3f3051-05ee-4f98-ae7b-55e7540bd1ce)
+![16](https://github.com/Atharv-101/Student-Management-System/assets/69358946/3c092788-3b18-4a32-813f-c9520e988cd4)
+![15](https://github.com/Atharv-101/Student-Management-System/assets/69358946/a6f33abd-f8ee-42fd-8b3c-02f866e7a988)
+![14](https://github.com/Atharv-101/Student-Management-System/assets/69358946/cd75e34e-e0c4-420d-bceb-0d878f16cf90)
+![13](https://github.com/Atharv-101/Student-Management-System/assets/69358946/77c2e467-cf6a-470a-829c-d7d70d4315de)
+![12](https://github.com/Atharv-101/Student-Management-System/assets/69358946/875870d8-dc27-4e28-904b-8eb97e793165)
+![11](https://github.com/Atharv-101/Student-Management-System/assets/69358946/0aad1a52-f6a6-4925-8850-8f1156d03f2e)
+![10](https://github.com/Atharv-101/Student-Management-System/assets/69358946/e749c026-8cc7-4f34-9c6c-f3e1920e430d)
+![9](https://github.com/Atharv-101/Student-Management-System/assets/69358946/9f4bb2f3-fabb-4c58-8709-b2bdd3e4eee0)
+![8](https://github.com/Atharv-101/Student-Management-System/assets/69358946/3ddf5c1f-0566-45e7-9f23-70277c5ea892)
+![7](https://github.com/Atharv-101/Student-Management-System/assets/69358946/8cc57134-1872-4110-b97a-e140be0aec02)
+![6](https://github.com/Atharv-101/Student-Management-System/assets/69358946/6d3e0e7d-8c0b-4e20-b0f0-b1538be6b10c)
+![5](https://github.com/Atharv-101/Student-Management-System/assets/69358946/321e36e0-13d2-421a-a787-7214e16f0da9)
+![4](https://github.com/Atharv-101/Student-Management-System/assets/69358946/b4e46a5d-d283-41c5-8572-5bf6e4991047)
+![3](https://github.com/Atharv-101/Student-Management-System/assets/69358946/2de48c36-e13b-4a62-ac01-b8e75a879715)
+![2](https://github.com/Atharv-101/Student-Management-System/assets/69358946/c86fbaef-8712-4c41-863f-bdcd76f7df10)
+![1](https://github.com/Atharv-101/Student-Management-System/assets/69358946/27e0ec4e-9215-4eda-a21e-ad988abba24d)
+
+
+
+
+
+![1](https://github.com/Atharv-101/Student-Management-System/assets/69358946/0a66253f-c586-4912-ad68-ec7d74a65698)
+![2](https://github.com/Atharv-101/Student-Management-System/assets/69358946/4f7e4e4e-c2d5-4574-8cc2-25752bedd66f)
+![3](https://github.com/Atharv-101/Student-Management-System/assets/69358946/ed9d4256-28f2-4161-b3bb-7538ee6515d5)
+![4](https://github.com/Atharv-101/Student-Management-System/assets/69358946/0de63fe5-fe96-4e15-8c09-3d81e6f94d05)
+![5](https://github.com/Atharv-101/Student-Management-System/assets/69358946/44ed9313-650f-440a-b811-71404c396ac8)
+![6](https://github.com/Atharv-101/Student-Management-System/assets/69358946/7cb52a55-f906-4e6b-9706-a1803924ed71)
+![7](https://github.com/Atharv-101/Student-Management-System/assets/69358946/e851290d-2f2f-4c82-a5fa-6f69688ebf61)
+![8](https://github.com/Atharv-101/Student-Management-System/assets/69358946/bb8fca12-e652-49d6-b57b-9a2a1d330f51)
+![9](https://github.com/Atharv-101/Student-Management-System/assets/69358946/2b7470a8-37ec-4ec1-a567-3f84cba81f63)
+![10](https://github.com/Atharv-101/Student-Management-System/assets/69358946/959ae954-0ace-4040-a392-fecffa00e415)
+![11](https://github.com/Atharv-101/Student-Management-System/assets/69358946/31b8d3fa-62cc-41e7-99d1-684466e95310)
+![12](https://github.com/Atharv-101/Student-Management-System/assets/69358946/2cabbca7-6756-4ca5-aac6-377806d899b2)
+![13](https://github.com/Atharv-101/Student-Management-System/assets/69358946/32cd35e3-50c2-434e-b973-08c1737e2b31)
+![14](https://github.com/Atharv-101/Student-Management-System/assets/69358946/a241df1f-b5f7-4c52-b1d9-6677f62556b4)
+![15](https://github.com/Atharv-101/Student-Management-System/assets/69358946/ed5a940c-3800-476a-9259-21018da17b91)
+![16](https://github.com/Atharv-101/Student-Management-System/assets/69358946/7d91d20d-f89a-4928-8925-2f574abef8d7)
+![17](https://github.com/Atharv-101/Student-Management-System/assets/69358946/7e164c3c-34f3-4fe3-a8b8-02e70d67c035)
+
+
