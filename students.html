@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>MCOE&RC - Students</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/feather/feather.css">
+
+    <link rel="stylesheet" href="assets/plugins/icons/flags/flags.css">
+
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <div class="header">
+
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/logo.png" alt="Logo">
+                </a>
+                <a href="index.html" class="logo logo-small">
+                    <img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
+                </a>
+            </div>
+
+            <div class="menu-toggle">
+                <a href="javascript:void(0);" id="toggle_btn">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="top-nav-search">
+                <form>
+                    <input type="text" class="form-control" placeholder="Search here">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+
+            <a class="mobile_btn" id="mobile_btn">
+                <i class="fas fa-bars"></i>
+            </a>
+
+
+        </div>
+
+
+        
+<!--nav Bar-->
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">
+                            <span>Main Menu</span>
+                        </li>
+                        <li class="submenu ">
+                            <a href="#"><i class="feather-grid"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
+                            <ul>
+                                <li><a href="dashboard.html">Admin Dashboard</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu active">
+                            <a href="#"><i class="fas fa-graduation-cap"></i> <span> Students</span> <span class="menu-arrow"></span></a>
+                            <ul>
+                                <li><a href="students.html" class="active">Student List</a></li>
+                                <li><a href="add-student.html">Student Add</a></li>
+                                <li><a href="edit-student.html">Student Edit</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Teachers</span> <span class="menu-arrow"></span></a>
+                            <ul>
+                                <li><a href="teachers.html">Teacher List</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fas fa-building"></i> <span> Departments</span> <span class="menu-arrow"></span></a>
+                            <ul>
+                                <li><a href="departments.html">Department List</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fas fa-book-reader"></i> <span> Subjects</span> <span class="menu-arrow"></span></a>
+                            <ul>
+                                <li><a href="subjects.html">Subject List</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="page-wrapper">
+            <div class="content container-fluid">
+
+                <div class="student-group-form">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search by PRN No ...">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search by Name ...">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search by Department ...">
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="search-student-btn">
+                                <button type="btn" class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card card-table comman-shadow">
+                            <div class="card-body">
+
+                                <div class="page-header">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h3 class="page-title">Students</h3>
+                                        </div>
+                                        <div class="col-auto text-end float-end ms-auto download-grp">
+                                            <a href="students.html" class="btn btn-outline-gray me-2 active"><i class="feather-list"></i></a>
+                                            <a href="#" class="btn btn-outline-primary me-2"><i class="fas fa-download"></i> Download</a>
+                                            <a href="add-student.html" class="btn btn-primary"><i class="fas fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="table-responsive">
+                                    <table class="table border-0 star-student table-hover table-center mb-0 datatable table-striped">
+                                        <thead class="student-thread">
+                                            <tr>
+                                                <th>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </th>
+                                                <th>PRN No</th>
+                                                <th>Name</th>
+                                                <th> Male / Female</th>
+                                                <th>Department</th>
+                                                <th>Year</th>
+                                                <th>Academic Year</th>
+                                                <th>Category</th>
+                                                <th>Mobile Number</th>
+                                                <th>Result</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580227</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        
+                                                        <a href="#">JAISWAL SACHIN DINESH</a>
+                                                    </h2>
+                                                </td>
+                                                <td> Male </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td> Open </td>
+                                                <td>9511940660</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580232</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html">JAWARE NIKHIL DEEPAK </a>
+                                                    </h2>
+                                                </td>
+                                                <td> Male </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td>open</td>
+                                                <td>9923234172</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580150</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html">GANGARDE ATHARV KISHOR</a>
+                                                    </h2>
+                                                </td>
+                                                <td> male </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td>obc</td>
+                                                <td>9423109991</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580183</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html">GUNJAL PRATIK BHANUDAS</a>
+                                                    </h2>
+                                                </td>
+                                                <td> male </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td> vj-nt</td>
+                                                <td>7666877191</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580242</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html">KADAM PRATHMESH RAVINDRA</a>
+                                                    </h2>
+                                                </td>
+                                                <td> male </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td>sc</td>
+                                                <td>9730821184</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580219</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html">JADHAV ROHIT SHALIK</a>
+                                                    </h2>
+                                                </td>
+                                                <td> male </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td>st</td>
+                                                <td>9325061596</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580244</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html">KADAM RUTIK NARAYAN </a>
+                                                    </h2>
+                                                </td>
+                                                <td> male </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td>obc</td>
+                                                <td>8421848930</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580196</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html">IKHE ISHWARI SANDEEPt</a>
+                                                    </h2>
+                                                </td>
+                                                <td> Female </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td>open</td>
+                                                <td>9359471074</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580136</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html">DOKHE VAISHNAVI ASHOK</a>
+                                                    </h2>
+                                                </td>
+                                                <td> Female </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td>sc</td>
+                                                <td>7498171195</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580203</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html">JADHAV CHAITANYA SHARAD </a>
+                                                    </h2>
+                                                </td>
+                                                <td> Male </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td>vj-nt</td>
+                                                <td>7517995488</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580201</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        
+                                                        <a href="#">JADHAV ANIKET BARKU</a>
+                                                    </h2>
+                                                </td>
+                                                <td> Male </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td> Open </td>
+                                                <td>7620248610</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580429</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        
+                                                        <a href="#"> ABHISHEK BHAU PAWAR</a>
+                                                    </h2>
+                                                </td>
+                                                <td> Male </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td> Open </td>
+                                                <td>7666998277</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580375</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        
+                                                        <a href="#">NARESH NAGULLA</a>
+                                                    </h2>
+                                                </td>
+                                                <td> Male </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td> Open </td>
+                                                <td>7058580181</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580187</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        
+                                                        <a href="#">HEDAOO MAYUR VIJAY</a>
+                                                    </h2>
+                                                </td>
+                                                <td> Male </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td> Open </td>
+                                                <td>9021940176</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F19058024</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        
+                                                        <a href="#">KADAM RUTUJA MAHENDRA</a>
+                                                    </h2>
+                                                </td>
+                                                <td> Female </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td> Open </td>
+                                                <td>8237223380</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580432</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        
+                                                        <a href="#">PAWAR BHUSHAN </a>
+                                                    </h2>
+                                                </td>
+                                                <td> Male </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td> Open </td>
+                                                <td>9022124205</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580163</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        
+                                                        <a href="#">GHOLAP RUTUJA PUNJARAM</a>
+                                                    </h2>
+                                                </td>
+                                                <td> Female </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td> Open </td>
+                                                <td>8010641779</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580655</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        
+                                                        <a href="#">RUSHIKESH PEDKE</a>
+                                                    </h2>
+                                                </td>
+                                                <td> Female </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td> Open </td>
+                                                <td>9545515146</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F1905800210</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        
+                                                        <a href="#">JADHAV KOMAL BHAGWAN</a>
+                                                    </h2>
+                                                </td>
+                                                <td> Female </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td> Open </td>
+                                                <td>9834154620</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>F190580185</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        
+                                                        <a href="#">HANDE GANESH GORAKSHA</a>
+                                                    </h2>
+                                                </td>
+                                                <td> Female </td>
+                                                <td>Computer Science</td>
+                                                <td>1st Year</td>
+                                                <td>2022-23</td>
+                                                <td> Open </td>
+                                                <td>9284269760</td>
+                                                <td>Not Announced</td>
+                                            </tr>
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>Copyright © 2022 MCOE&RC.</p>
+            </footer>
+
+        </div>
+
+    </div>
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/feather.min.js"></script>
+
+    <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <script src="assets/plugins/datatables/datatables.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+
+</html>
